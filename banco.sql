@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30-Jul-2026 às 16:48
+-- Tempo de geração: 20-Ago-2026 às 16:05
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -40,10 +40,10 @@ CREATE TABLE `produtos` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `ususarios`
+-- Estrutura da tabela `usuarios`
 --
 
-CREATE TABLE `ususarios` (
+CREATE TABLE `usuarios` (
   `id` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `email` varchar(100) NOT NULL,
@@ -51,11 +51,11 @@ CREATE TABLE `ususarios` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `ususarios`
+-- Extraindo dados da tabela `usuarios`
 --
 
-INSERT INTO `ususarios` (`id`, `nome`, `email`, `senha`) VALUES
-(1, 'Adiministrador', 'adin@sistema.com', '123456');
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
+(1, 'Adiministrador', 'admin@sistema.com', '123456');
 
 --
 -- Índices para tabelas despejadas
@@ -68,9 +68,9 @@ ALTER TABLE `produtos`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices para tabela `ususarios`
+-- Índices para tabela `usuarios`
 --
-ALTER TABLE `ususarios`
+ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -84,9 +84,9 @@ ALTER TABLE `produtos`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT de tabela `ususarios`
+-- AUTO_INCREMENT de tabela `usuarios`
 --
-ALTER TABLE `ususarios`
+ALTER TABLE `usuarios`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
