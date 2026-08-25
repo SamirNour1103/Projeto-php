@@ -1,3 +1,7 @@
+<?php 
+    $url = '/projeto-php/';
+?> 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -12,9 +16,9 @@
     <header>
         <h1>Sistema de Produtos</h1>
         <nav>
-            <a href="index.php">Início</a>
-            <a href="produtos/listar.php">Produtos</a>
-            <a href="login.php">Login</a>
-            <a href="produtos/logout.php">Logout</a>
+            <a href="<?php echo $url; ?>index.php">Início</a>
+            <a href="<?php echo $url; ?>produtos/listar.php">Produtos</a>
+            <a href="<?php echo $url; ?>login.php">Login</a>
+            <a href="<?php echo $url; ?>logout.php">Logout</a>
         </nav>
     </header>
