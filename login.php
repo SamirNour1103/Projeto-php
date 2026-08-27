@@ -1,6 +1,7 @@
 <?php
     session_start();
-    include 'conexao.php';
+    require __DIR__ . '/conexao.php';
+
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $email = $_POST['email'];
             $senha = $_POST['senha'];
@@ -19,7 +20,7 @@
     }
 ?>
 
-<?php include 'cabecalho.php'; ?>
+<?php require __DIR__ . '/cabecalho.php'; ?>
 
 <main>
     <h2>Login</h2>
@@ -35,4 +36,4 @@
     </form>
 </main>
 
-<?php include 'rodape.php'; ?>
+<?php require __DIR__ . '/rodape.php'; ?>
