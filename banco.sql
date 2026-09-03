@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 27-Ago-2026 às 16:39
+-- Tempo de geração: 03-Set-2026 às 16:34
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 8.1.2
 
@@ -43,7 +43,9 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`id`, `nome`, `descricao`, `preco`, `quantidade`) VALUES
 (1, 'Celular', 'Celular da marca MotoG', '799.99', 5),
-(2, 'Notebook', 'Notebook de 17 polegadas co 164 de memoria', '1499.99', 5);
+(2, 'Notebook', 'Notebook de 17 polegadas co 164 de memoria', '1499.99', 5),
+(3, 'Garrafa Térmica Inox 500ml', 'Garrafa em aço inoxidável com parede dupla e isolamento a vácuo, ideal para manter bebidas quentes por até 12 horas ou geladas por até 24 horas. Possui tampa rosqueável anti-vazamento.', '59.00', 23),
+(4, 'Fone de Ouvido Bluetooth', 'Fone totalmente sem fio com conexão Bluetooth 5.3, cancelamento de ruído ativo e estojo de carregamento compacto.', '16.00', 30);
 
 -- --------------------------------------------------------
 
@@ -63,7 +65,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
-(1, 'Adiministrador', 'admin@sistema.com', '123456');
+(1, 'Samir', 'samir.simon.a.a.nour@gmail.com', '11032010');
 
 --
 -- Índices para tabelas despejadas
@@ -89,7 +91,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `usuarios`
