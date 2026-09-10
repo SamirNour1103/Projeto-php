@@ -23,7 +23,7 @@
 <?php require __DIR__ . '/cabecalho.php'; ?>
 
 <main>
-    <h2>Login</h2>
+    <h2 class="centro">Login</h2>
     <?php if (isset($mensagem)) { ?>
         <p><?php echo $mensagem; ?></p>
     <?php } ?>
